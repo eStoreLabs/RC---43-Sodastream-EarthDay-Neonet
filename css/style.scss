@@ -190,7 +190,7 @@ $secondary: #002238;
       -webkit-box-align: center;
       align-items: center;
       -webkit-box-pack: start;
-      justify-content: space-between;
+      justify-content: flex-start;
       max-width: 100%;
       margin: 0 auto;
       padding-top: 60px;
@@ -407,7 +407,15 @@ $secondary: #002238;
       font-size: 12px;
       text-align: center;
       color: $primary;
-    }
+      
+      &--mobile {
+        display: block;
+      }
+
+      &--desktop {
+        display: none;
+      }
+    }    
   }
 
   .swiper-pagination-bullet {
@@ -628,6 +636,7 @@ $secondary: #002238;
         min-height: auto;
         height: auto;
         padding-bottom: 20px;
+        justify-content: space-between;
       }
 
       &__single-subtitle-disclaimer {
@@ -746,6 +755,16 @@ $secondary: #002238;
       &__single-inner-2 {
         -webkit-box-align: center;
         align-items: center;
+      }
+
+      &__disclaimer {
+        &--mobile {
+          display: none;
+        }
+  
+        &--desktop {
+          display: block;
+        }
       }
     }
 
